@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RegexScanner
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func action(_ sender: Any) {
+        let scannerView = RegexScanner.getScanner(regex: "[A-Z]{2}[0-9]{9}[A-Z]{2}") { value in
+            print(value)
+        }
+        present(scannerView, animated: true, completion: nil)
     }
 
 }

@@ -1,0 +1,6 @@
+framework module RegexScanner {
+  umbrella header "RegexScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

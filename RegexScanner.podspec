@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RegexScanner'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RegexScanner.'
+  s.summary          = 'RegexScanner is a Camera scanner to read values that match with a regex.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  RegexScanner is a Camera scanner to read values that match with a regex. Just send a regex parameter and wait the scanner return the recognized value.
                        DESC
 
-  s.homepage         = 'https://github.com/Narlei Moreira/RegexScanner'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/narlei/regexscanner'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Narlei Moreira' => 'narlei.guitar@gmail.com' }
-  s.source           = { :git => 'https://github.com/Narlei Moreira/RegexScanner.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/narlei/regexscanner.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/narleimoreira'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
+  s.swift_versions   = '5.0'
 
   s.source_files = 'RegexScanner/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'RegexScanner' => ['RegexScanner/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

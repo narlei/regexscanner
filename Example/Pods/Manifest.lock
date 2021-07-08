@@ -1,0 +1,16 @@
+PODS:
+  - RegexScanner (0.1.0)
+
+DEPENDENCIES:
+  - RegexScanner (from `../`)
+
+EXTERNAL SOURCES:
+  RegexScanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RegexScanner: 33c4839d04527b3d622052c34638deee57771073
+
+PODFILE CHECKSUM: 60aa2012f831cb1fb3eedda01753d0d6884ee922
+
+COCOAPODS: 1.10.1
